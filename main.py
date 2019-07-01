@@ -9,6 +9,7 @@ led.direction = digitalio.Direction.OUTPUT
 
 i = 0
 
+
 def wheel(pos):
     # Input a value 0 to 255 to get a color value.
     # The colours are a transition r - g - b - back to r.
@@ -22,7 +23,6 @@ def wheel(pos):
     else:
         pos -= 170
         return (int(pos*3), 0, int(255 - pos*3))
-
 
 
 while True:
